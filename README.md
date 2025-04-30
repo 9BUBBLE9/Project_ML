@@ -42,6 +42,8 @@
     ```bash
     pip install pandas numpy matplotlib scikit-learn catboost tpot openpyxl
 2. Запусти Jupyter Notebook:
-    jupyter notebook Aton2.ipynb
-3. Поменяй path-ы файлов на свои(transactions_data.xlsx и clients_data.json)
-4. Пролистай ноутбук и выполни ячейки по порядку
+    ```bash
+    jupyter lab
+3. Откройте файл Aton2.ipynb
+4. Поменяй path-ы файлов на свои(transactions_data.xlsx и clients_data.json)
+5. Пролистай ноутбук и выполни ячейки по порядку
