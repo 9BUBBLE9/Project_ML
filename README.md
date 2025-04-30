@@ -1,2 +1,47 @@
-# Project_ML
+**Цель проекта**:  
 Построение прогноза количества транзакций на следующий месяц на основе имеющихся данных о транзакциях и профилей клиентов.
+
+---
+
+## 📁 Структура проекта
+
+- `Aton2.ipynb` — основной Jupyter Notebook с полным пайплайном:
+  - Загрузка и объединение данных (`transactions_data.xlsx` и `clients_data.json`)
+  - Преобразование дат, фильтрация, агрегация
+  - Обогащение признаков: скользящие средние, лаги, категориальные признаки, возраст
+  - Построение модели `CatBoostRegressor` и `RandomForestRegressor`
+  - Автогенерация прогноза на 30 дней вперёд
+  - Визуализация исторических данных и прогноза
+  - Сглаживание прогноза (rolling mean)
+
+---
+
+## 🛠️ Используемые технологии
+
+- Python 3.x
+- pandas, numpy, matplotlib
+- scikit-learn
+- catboost
+- TPOT (AutoML)
+- Jupyter Notebook
+
+---
+
+## 📈 Метрики
+
+Для оценки качества моделей использовались:
+- MAE (Mean Absolute Error)
+- R² (Коэффициент детерминации)
+
+---
+
+## 🧪 Как запустить
+
+1. Установи зависимости:
+
+    ```bash
+    pip install pandas numpy matplotlib scikit-learn catboost tpot openpyxl
+2. Запусти Jupyter Notebook:
+    jupyter notebook Aton2.ipynb
+3. Поменяй path-ы файлов на свои(transactions_data.xlsx и clients_data.json)
+4. Пролистай ноутбук и выполни ячейки по порядку
